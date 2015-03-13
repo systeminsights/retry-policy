@@ -35,10 +35,10 @@ orElse = R.curry((p1, p2) -> (e) ->
 
 # :: RetryPolicy e -> RetryPolicy e
 #
-# Given an inital policy, P, use it until it halts, then start over with the
-# original.
+# Repeat a retry policy forever, starting over whenever it halts.
 #
-repeat = (p) -> orElse(p, p)
+repeat = (p) ->
+  orElse(p, (e) -> repeat(p)(e))
 
 # :: Number -> RetryPolicy e -> RetryPolicy e
 #

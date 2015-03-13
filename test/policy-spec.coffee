@@ -101,3 +101,9 @@ describe "policy", ->
       expect(logPolicy(['a', 'a', 'a', 'a', 'a'], p))
         .to.eql([5, 10, 20, 30, 30])
 
+  describe "repeat", ->
+    it "should repeat the given policy forever", ->
+      p = policy.both(policy.exponentialBackoff(2), policy.limit(2))
+      expect(logPolicy(['a', 'a', 'a', 'a', 'a', 'a'], policy.repeat(p)))
+        .to.eql([2, 4, 2, 4, 2, 4])
+
