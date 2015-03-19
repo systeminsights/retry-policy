@@ -1,4 +1,4 @@
-# retry-policy
+# retry-policy [![Build Status](https://travis-ci.org/systeminsights/retry-policy.svg?branch=master)](https://travis-ci.org/systeminsights/retry-policy)
 
 Combinators for building composable retry policies.
 
