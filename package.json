@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/systeminsights/retry-policy",
   "devDependencies": {
-    "chai": "^2.1.1",
+    "chai": "^2.2.0",
     "coffee-script": "^1.9.1",
     "in-publish": "^1.1.1",
     "mocha": "^2.2.1"
@@ -35,6 +35,6 @@
     "fantasy-options": "0.0.1",
     "fantasy-sorcery": "0.0.1",
     "fantasy-tuples": "0.0.1",
-    "ramda": "^0.11.0"
+    "ramda": "^0.13.0"
   }
 }
