@@ -1,6 +1,6 @@
 {
   "name": "retry-policy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Combinators for creating composable retry policies.",
   "main": "lib/index.js",
   "scripts": {
